@@ -23,7 +23,6 @@ body {
 }
 a {
   text-decoration: none;
-  font-style: normal;
   color: var(--text-color-primary);
 }
 a:hover,
