@@ -1,6 +1,4 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Ralewey", sans-serif;
   --text-color-primary: #212121;
   --text-color-sacondary: #2196f3;
   --background-color-primary: #e5e5e5;
@@ -18,11 +16,13 @@
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 a {
   text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
   color: var(--text-color-primary);
 }
 a:hover,
@@ -35,49 +35,16 @@ ol {
   list-style: none;
 }
 /*==============OTHERS============*/
-.webstudio {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--text-color-primary);
-}
 .web {
   font-family: "Raleway", sans-serif;
   color: var(--text-color-sacondary);
 }
-.header .webstudio:hover,
-.header .webstudio:focus {
-  color: var(--text-color-sacondary);
-}
-.heading-main {
-  /*___Чем занимаемся(заголовки)____ */
-  height: 42px;
-
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-
-  color: var(--text-color-primary);
-}
-/*=============HEADER ШАПКА========*/
-/*_________HEDER_________*/
-.header {
-  padding: 29px 0;
-}
-/*________logo_________ */
-
+/*_____end web-studio_____*/
 .header .webstudio:hover,
 .header .webstudio:focus {
   color: var(--text-color-sacondary);
 }
 /*___________NAVIGATION________ */
-.navigation,
-.adress {
-  font-weight: 500;
-}
 .navigation__item:hover a,
 .navigation__item:focus a {
   color: var(--text-color-sacondary);
@@ -88,7 +55,8 @@ ol {
   max-width: 1600px;
   height: 600px;
 
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img_hero.png);
 }
 .hero__title {
   /*__Эффективные решения для вашего бизнеса__*/
@@ -126,7 +94,7 @@ ol {
 .advantage__text {
   width: 270px;
   height: 101px;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -137,11 +105,25 @@ ol {
 .team {
   min-width: 1600px;
   height: 648px;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #f5f4fa;
+}
+.team .heading-main {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 /*__team-item__*/
 .team__cards {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
+  margin-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .team__card-items {
   width: 270px;
@@ -157,6 +139,8 @@ ol {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  margin-top: 30px;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--text-color-primary);
@@ -166,6 +150,8 @@ ol {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  margin-top: 10px;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--text-color-grey);
@@ -176,15 +162,10 @@ ol {
   background-color: #2f303a;
   min-width: 1600px;
   height: 252px;
-  font-weight: normal;
 }
 .footer a {
   color: var(--text-color-white);
 }
-.footer .webstudio {
-  color: var(--text-color-white)
-}
-
 /*==========END FOOTER-ПОДВАЛ============*/
 /*_______________________________________*/
 /*================PORTFOLIO==============*/
@@ -198,6 +179,7 @@ ol {
   border-radius: 4px;
 }
 .galery__btn {
+  margin-top: 34px;
   width: 790px;
 }
 .galery__btn a:hover,
@@ -210,13 +192,19 @@ ol {
 /* ______GALERY_ITEM_______ */
 .galery__card {
   width: 1200px;
+  margin-top: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .galery__card-item {
   height: 404px;
+
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
 .galery__footer-card {
+  margin-top: 20px;
+  margin-left: 24px;
   width: 322px;
   height: 70px;
 }
