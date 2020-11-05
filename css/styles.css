@@ -1,0 +1,233 @@
+:root {
+  --text-color-primary: #212121;
+  --text-color-sacondary: #2196f3;
+  --background-color-primary: #e5e5e5;
+  --background-color-header: #ffffff;
+  --text-color-white: #ffffff;
+  --text-color-grey: #757575;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color-primary);
+}
+a:hover,
+a:focus {
+  color: var(--text-color-sacondary);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/*==============OTHERS============*/
+.web {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color-sacondary);
+}
+/*_____end web-studio_____*/
+.header .webstudio:hover,
+.header .webstudio:focus {
+  color: var(--text-color-sacondary);
+}
+/*___________NAVIGATION________ */
+.navigation__item:hover a,
+.navigation__item:focus a {
+  color: var(--text-color-sacondary);
+}
+/*============END HEADER ШАПКА=========*/
+/*=============HERO-ГЕРОЙ==============*/
+.hero {
+  max-width: 1600px;
+  height: 600px;
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img_hero.png);
+}
+.hero__title {
+  /*__Эффективные решения для вашего бизнеса__*/
+
+  font-weight: 900;
+  width: 696px;
+  font-size: 44px;
+  line-height: 60px;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color-primary);
+}
+.button {
+  /* ___BUTTON-Заказать-услугу___ */
+  background: var(--text-color-sacondary);
+  color: var(--background-color-header);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*=============END HERO-ГЕРОЙ===========*/
+/*=========ADVANTAGE-ПРЕМУЩЕСТВО=========*/
+/*____________ADVANTAGE-ITEM____________*/
+.advantage__heading {
+  width: 270px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--text-color-primary);
+}
+.advantage__text {
+  width: 270px;
+  height: 101px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color-grey);
+}
+/*=======END ADVANTAGE-ПРЕМУЩЕСТВО========*/
+/*=============TEAM-КОМАНДА==============*/
+.team {
+  min-width: 1600px;
+  height: 648px;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f5f4fa;
+}
+.team .heading-main {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+/*__team-item__*/
+.team__cards {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  margin-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team__card-items {
+  width: 270px;
+  height: 428px;
+  background-color: var(--text-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  /* background-color: var(--background-color-header); */
+}
+.team__name {
+  /*_____Имя______ */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-primary);
+}
+.team__post {
+  /* ____Должность___ */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-grey);
+}
+/*===========END TEAM-КОМАНДА============*/
+/*============FOOTER-ПОДВАЛ==============*/
+.footer {
+  background-color: #2f303a;
+  min-width: 1600px;
+  height: 252px;
+}
+.footer a {
+  color: var(--text-color-white);
+}
+/*==========END FOOTER-ПОДВАЛ============*/
+/*_______________________________________*/
+/*================PORTFOLIO==============*/
+/*==========GALERY FOR PORTFOLIO=========*/
+/*____galery-btn____ */
+.galery__contanier a {
+  width: 128px;
+  height: 38px;
+  background: #f5f4fa;
+  color: var(--text-color-primary);
+  border-radius: 4px;
+}
+.galery__btn {
+  margin-top: 34px;
+  width: 790px;
+}
+.galery__btn a:hover,
+.galery__btn a:focus {
+  background: var(--text-color-sacondary);
+  color: var(--text-color-white);
+  border-radius: 4px;
+}
+/*___end galery-bt___ */
+/* ______GALERY_ITEM_______ */
+.galery__card {
+  width: 1200px;
+  margin-top: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.galery__card-item {
+  height: 404px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.galery__footer-card {
+  margin-top: 20px;
+  margin-left: 24px;
+  width: 322px;
+  height: 70px;
+}
+.galery__category--name {
+  width: 322px;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+
+  color: var(--text-color-primary);
+}
+.galery__category {
+  margin-top: 4px;
+  width: 322px;
+  height: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-grey);
+}
+/*==========END GALERY FOR PORTFOLIO=========*/
