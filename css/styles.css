@@ -79,7 +79,7 @@ ol {
 .hero__title {
   /*__Эффективные решения для вашего бизнеса__*/
 
-  font-weight: 700;
+  font-weight: 900;
   width: 696px;
   font-size: 44px;
   line-height: 1.363;
@@ -90,9 +90,16 @@ ol {
 }
 .button {
   /* ___BUTTON-Заказать-услугу___ */
-  background: var(--color-sacondary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--color-white);
-  border: 0;
+  background-color: var(--color-sacondary);
+  width: 200px;
+  height: 50px;
+  border: 1px solid var(--color-sacondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -148,7 +155,7 @@ ol {
 }
 .team__post {
   /* ____Должность___ */
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -230,7 +237,7 @@ ol {
 .galery__category {
   width: 322px;
   height: 30px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
